@@ -9,7 +9,7 @@ export ENCRYPTION_PASSWORD=chichi123
 #openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in ~/.gnupg/pubring.kbx -out deploy/pubring.kbx.enc
 
 travis encrypt --add -r $1 SONATYPE_USERNAME=vegegoku
-travis encrypt --add -r $1 SONATYPE_PASSWORD=chichi123*
+travis encrypt --add -r $1 SONATYPE_PASSWORD=chichi123
 travis encrypt --add -r $1 ENCRYPTION_PASSWORD=chichi123
 travis encrypt --add -r $1 GPG_KEYNAME=ED7F4E83
 travis encrypt --add -r $1 GPG_PASSPHRASE=chichi123
