@@ -11,5 +11,5 @@ openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in ~/.gnupg/pubring.kbx -ou
 travis encrypt --add -r $1 SONATYPE_USERNAME=vegegoku
 travis encrypt --add -r $1 SONATYPE_PASSWORD=chichi123*
 travis encrypt --add -r $1 ENCRYPTION_PASSWORD=chichi123*
-travis encrypt --add -r $1 GPG_KEYNAME=78549437
+travis encrypt --add -r $1 GPG_KEYNAME=CA69CF9978549437
 travis encrypt --add -r $1 GPG_PASSPHRASE=chichi123*
