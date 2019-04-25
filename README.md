@@ -78,8 +78,9 @@ vertxContext.vertx().setPeriodic(1000, event -> vertxContext.vertx().eventBus().
 @ListenTo(event = VertxBusEvent.class)
 public void onEventBusReady(VertxBusContext context) {
 	context.registerMessageHandler(VertxBusContext.DEFAULT_SOCKJS_ADDRESS, (VertxBusContext.EventBusMessageHandler<Number>) message -> {
-	    view.showNumber(message);
+	    // handle message
 	});
 }
 ```
+
 
