@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/DominoKit/domino-event-bus.svg?branch=master)](https://travis-ci.org/DominoKit/domino-event-bus)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.dominokit/domino-event-bus/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.dominokit/domino-event-bus)
+![Sonatype Nexus (Snapshots)](https://img.shields.io/nexus/s/https/oss.sonatype.org/org.dominokit/domino-event-bus.svg)
+
+
 # domino-event-bus
 
 ## Setup
