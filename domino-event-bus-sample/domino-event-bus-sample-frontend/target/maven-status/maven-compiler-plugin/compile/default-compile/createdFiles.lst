@@ -1,0 +1,14 @@
+org/dominokit/sample/eventbus/client/DominoEventBusSampleClientModule.class
+org/dominokit/sample/eventbus/client/routing/DominoEventBusSampleProxy_PresenterHistoryListenerTask.class
+org/dominokit/sample/eventbus/client/presenters/DominoEventBusSampleProxy_Presenter.class
+org/dominokit/sample/eventbus/client/presenters/DominoEventBusSampleProxy_PresenterCommand.class
+META-INF/domino/presenters
+org/dominokit/sample/eventbus/client/DominoEventBusSampleModuleConfiguration.class
+org/dominokit/sample/eventbus/client/presenters/DominoEventBusSampleProxy_Presenter_Config.class
+META-INF/domino/views
+META-INF/domino/initialTasks
+org/dominokit/sample/eventbus/client/views/DominoEventBusSampleView.class
+org/dominokit/sample/eventbus/client/DominoEventBusSampleModuleConfiguration_Provider.class
+org/dominokit/sample/eventbus/client/listeners/DominoEventBusSampleProxy_PresenterListenForVertxBusEvent.class
+META-INF/services/org.dominokit.domino.api.client.ModuleConfigurationProvider
+org/dominokit/sample/eventbus/client/presenters/DominoEventBusSampleProxy.class

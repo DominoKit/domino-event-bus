@@ -1,0 +1,8 @@
+META-INF/domino/initialTasks
+org/dominokit/sample/eventbus/client/DominoEventBusSampleUIModuleConfiguration.class
+org/dominokit/sample/eventbus/client/DominoEventBusSampleUIModuleConfiguration_Provider.class
+org/dominokit/sample/eventbus/client/DominoEventBusSampleUIClientModule.class
+META-INF/services/org.dominokit.domino.api.client.ModuleConfigurationProvider
+META-INF/domino/presenters
+org/dominokit/sample/eventbus/client/ui/views/DominoEventBusSampleViewImpl.class
+META-INF/domino/views

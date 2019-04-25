@@ -1,0 +1,8 @@
+META-INF/domino/initialTasks
+org/dominokit/eventbus/client/DominoEventBusUIModuleConfiguration_Provider.class
+org/dominokit/eventbus/client/ui/views/VertxBusViewImpl.class
+META-INF/services/org.dominokit.domino.api.client.ModuleConfigurationProvider
+META-INF/domino/presenters
+org/dominokit/eventbus/client/DominoEventBusUIClientModule.class
+org/dominokit/eventbus/client/DominoEventBusUIModuleConfiguration.class
+META-INF/domino/views

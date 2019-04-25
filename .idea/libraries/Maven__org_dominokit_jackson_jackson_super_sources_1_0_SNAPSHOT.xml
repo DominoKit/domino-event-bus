@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.dominokit.jackson:jackson-super:sources:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/jackson/jackson-super/1.0-SNAPSHOT/jackson-super-1.0-20190327.195618-15-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/jackson/jackson-super/1.0-SNAPSHOT/jackson-super-1.0-20190327.195618-15-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/jackson/jackson-super/1.0-SNAPSHOT/jackson-super-1.0-20190327.195618-15-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

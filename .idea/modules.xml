@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/domino-event-bus.iml" filepath="$PROJECT_DIR$/domino-event-bus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domino-event-bus-backend/domino-event-bus-backend.iml" filepath="$PROJECT_DIR$/domino-event-bus-backend/domino-event-bus-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domino-event-bus-frontend/domino-event-bus-frontend.iml" filepath="$PROJECT_DIR$/domino-event-bus-frontend/domino-event-bus-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domino-event-bus-sample/domino-event-bus-sample.iml" filepath="$PROJECT_DIR$/domino-event-bus-sample/domino-event-bus-sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domino-event-bus-sample/domino-event-bus-sample-backend/domino-event-bus-sample-backend.iml" filepath="$PROJECT_DIR$/domino-event-bus-sample/domino-event-bus-sample-backend/domino-event-bus-sample-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domino-event-bus-sample/domino-event-bus-sample-frontend/domino-event-bus-sample-frontend.iml" filepath="$PROJECT_DIR$/domino-event-bus-sample/domino-event-bus-sample-frontend/domino-event-bus-sample-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domino-event-bus-sample/domino-event-bus-sample-frontend-ui/domino-event-bus-sample-frontend-ui.iml" filepath="$PROJECT_DIR$/domino-event-bus-sample/domino-event-bus-sample-frontend-ui/domino-event-bus-sample-frontend-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus.iml" filepath="$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus-backend/vertx-domino-event-bus-backend.iml" filepath="$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus-backend/vertx-domino-event-bus-backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus-frontend/vertx-domino-event-bus-frontend.iml" filepath="$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus-frontend/vertx-domino-event-bus-frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus-frontend-ui/vertx-domino-event-bus-frontend-ui.iml" filepath="$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus-frontend-ui/vertx-domino-event-bus-frontend-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus-shared/vertx-domino-event-bus-shared.iml" filepath="$PROJECT_DIR$/vertx-domino-event-bus/vertx-domino-event-bus-shared/vertx-domino-event-bus-shared.iml" />
+    </modules>
+  </component>
+</project>

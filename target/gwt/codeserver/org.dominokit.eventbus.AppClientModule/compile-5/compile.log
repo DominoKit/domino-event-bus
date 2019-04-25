@@ -1,0 +1,13 @@
+binding: user.agent=safari
+Compiling module org.dominokit.eventbus.AppClientModule
+   Unification traversed 808 fields and methods and 355 types. 24 are considered part of the current module and 35 had all of their fields and methods traversed.
+   Compiling 1 permutation
+      Compiling permutation 0...
+      Linking per-type JS with 24 new/changed types.
+      Source Maps Enabled
+   Compile of permutations succeeded
+   Compilation succeeded -- 1.152s
+Linking into /home/rjeeb/Development/git/new-event-bus/domino-event-bus/target/gwt/codeserver/org.dominokit.eventbus.AppClientModule/compile-5/war/app; Writing extras to /home/rjeeb/Development/git/new-event-bus/domino-event-bus/target/gwt/codeserver/org.dominokit.eventbus.AppClientModule/compile-5/extras/app
+   Link succeeded
+   Linking succeeded -- 0.087s
+1.395s total -- Compile completed

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.dominokit.domino:domino-service-discovery:1.0-rc.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/domino/domino-service-discovery/1.0-rc.4-SNAPSHOT/domino-service-discovery-1.0-rc.4-20190425.123719-55.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/domino/domino-service-discovery/1.0-rc.4-SNAPSHOT/domino-service-discovery-1.0-rc.4-20190425.123719-55-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/domino/domino-service-discovery/1.0-rc.4-SNAPSHOT/domino-service-discovery-1.0-rc.4-20190425.123719-55-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

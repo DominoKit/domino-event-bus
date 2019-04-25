@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.dominokit.domino.api:jaxrs-super:sources:1.0-rc.4-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/domino/api/jaxrs-super/1.0-rc.4-SNAPSHOT/jaxrs-super-1.0-rc.4-20190425.123804-43-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/domino/api/jaxrs-super/1.0-rc.4-SNAPSHOT/jaxrs-super-1.0-rc.4-20190425.123804-43-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/dominokit/domino/api/jaxrs-super/1.0-rc.4-SNAPSHOT/jaxrs-super-1.0-rc.4-20190425.123804-43-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

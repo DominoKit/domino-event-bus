@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="vertx-domino-event-bus-frontend" />
+        <module name="vertx-domino-event-bus-shared" />
+        <module name="domino-event-bus-sample-frontend" />
+        <module name="domino-event-bus-sample-backend" />
+        <module name="domino-event-bus-backend" />
+        <module name="vertx-domino-event-bus-backend" />
+        <module name="domino-event-bus-frontend" />
+        <module name="vertx-domino-event-bus-frontend-ui" />
+        <module name="domino-event-bus-sample-frontend-ui" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="domino-event-bus" target="1.8" />
+      <module name="domino-event-bus-backend" target="1.8" />
+      <module name="domino-event-bus-frontend" target="1.8" />
+      <module name="domino-event-bus-sample" target="1.8" />
+      <module name="domino-event-bus-sample-backend" target="1.8" />
+      <module name="domino-event-bus-sample-frontend" target="1.8" />
+      <module name="domino-event-bus-sample-frontend-ui" target="1.8" />
+      <module name="domino-event-bus-sample-shared" target="1.8" />
+      <module name="vertx-domino-event-bus" target="1.8" />
+      <module name="vertx-domino-event-bus-backend" target="1.8" />
+      <module name="vertx-domino-event-bus-frontend" target="1.8" />
+      <module name="vertx-domino-event-bus-frontend-ui" target="1.8" />
+      <module name="vertx-domino-event-bus-shared" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="domino-event-bus-sample-frontend" options="-Xlint:all" />
+      <module name="domino-event-bus-sample-frontend-ui" options="-Xlint:all" />
+      <module name="vertx-domino-event-bus-frontend" options="-Xlint:all" />
+      <module name="vertx-domino-event-bus-frontend-ui" options="-Xlint:all" />
+    </option>
+  </component>
+</project>

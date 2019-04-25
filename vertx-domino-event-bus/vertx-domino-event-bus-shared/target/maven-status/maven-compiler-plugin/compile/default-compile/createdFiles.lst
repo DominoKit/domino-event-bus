@@ -1,0 +1,4 @@
+org/dominokit/eventbus/shared/VertxBusEvent.class
+org/dominokit/eventbus/shared/VertxBusContext$EventBusMessageHandler.class
+org/dominokit/eventbus/shared/VertxBusContext.class
+org/dominokit/eventbus/shared/VertxBusContext$EventBusCloseHandler.class
