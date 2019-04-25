@@ -6,7 +6,7 @@ travis enable -r $1
 
 export ENCRYPTION_PASSWORD=chichi123*
 openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in ~/.gnupg/trustdb.gpg -out deploy/secring.gpg.enc
-openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in ~/.gnupg/pubring.kbx -out deploy/pubring.gpg.enc
+openssl aes-256-cbc -pass pass:$ENCRYPTION_PASSWORD -in ~/.gnupg/pubring.kbx -out deploy/pubring.kbx.enc
 
 travis encrypt --add -r $1 SONATYPE_USERNAME=vegegoku
 travis encrypt --add -r $1 SONATYPE_PASSWORD=chichi123*
