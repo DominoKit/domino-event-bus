@@ -1,31 +1,85 @@
-# How to run
+# domino-event-bus
 
-- #### run `mvn clean install` to build
+## Setup
 
-- #### Run for development :
+### Maven dependency
 
-  - ##### For super dev mode 
-  
-    - In one terminal run `mvn gwt:codeserver -pl *-frontend -am`
-    
-    - In another terminal `cd domino-event-bus-backend`
-    - execute `mvn exec:java`
-    - the server port will be printed in the logs access the application on `http://localhost:[port]`
-    
-    - For debuging client code in intellij please install the following chrome plugin
-    
-    https://chrome.google.com/webstore/detail/jetbrains-ide-support/hmhgeddbohgjknpmjagkdomcpobmllji
-    
-    then execute the `js-debug` run configuration in debug mode. 
+- Add the following dependency to the backend module
+```xml
+<dependency>
+    <groupId>org.dominokit</groupId>
+    <artifactId>vertx-domino-event-bus-backend</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```
 
-  - ##### For gwt compiled mode 
-  
-    - `cd domino-event-bus-backend`
-    - execute `mvn exec:java -Dmode=compiled`
-    - the server port will be printed in the logs access the application on `http://localhost:[port]`
+- Add the following dependency to the frontend module
+```xml
+<dependency>
+    <groupId>org.dominokit</groupId>
+    <artifactId>vertx-domino-event-bus-shared</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+```
 
-  - ##### For production mode 
-  
-    - `cd domino-event-bus-backend`
-    - execute `java -jar target/domino-event-bus-backend-1.0-SNAPSHOT-fat.jar`
-    - the server port will be printed in the logs access the application on `http://localhost:[port]`
+- Add these dependencies to the frontend shell project
+```xml
+<dependency>
+    <groupId>org.dominokit</groupId>
+    <artifactId>vertx-domino-event-bus-frontend</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+    <groupId>org.dominokit</groupId>
+    <artifactId>vertx-domino-event-bus-frontend</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <classifier>sources</classifier>
+</dependency>
+<dependency>
+    <groupId>org.dominokit</groupId>
+    <artifactId>vertx-domino-event-bus-frontend-ui</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+<dependency>
+    <groupId>org.dominokit</groupId>
+    <artifactId>vertx-domino-event-bus-frontend-ui</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <classifier>sources</classifier>
+</dependency>
+```
+
+- Add these two lines on your html page
+```xml
+<script src="/static/bower_components/sockjs/sockjs.min.js"></script>
+<script src="/static/bower_components/vertx3-eventbus-client/vertx-eventbus.js"></script>
+```
+
+> To use the snapshot version without building locally, configure the snapshot repository
+```xml
+<repository>
+   <id>sonatype-snapshots-repo</id>
+   <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+   <snapshots>
+      <enabled>true</enabled>
+      <updatePolicy>always</updatePolicy>
+      <checksumPolicy>fail</checksumPolicy>
+   </snapshots>
+</repository>
+```
+
+## Sample
+
+```java
+
+// In your backend, publish message to the event bus
+vertxContext.vertx().setPeriodic(1000, event -> vertxContext.vertx().eventBus().publish(VertxBusContext.DEFAULT_SOCKJS_ADDRESS, new Random().nextInt()));
+
+// In your frontend, listen to the messages
+@ListenTo(event = VertxBusEvent.class)
+public void onEventBusReady(VertxBusContext context) {
+	context.registerMessageHandler(VertxBusContext.DEFAULT_SOCKJS_ADDRESS, (VertxBusContext.EventBusMessageHandler<Number>) message -> {
+	    view.showNumber(message);
+	});
+}
+```
+
