@@ -1,5 +1,0 @@
-org/dominokit/sample/eventbus/server/DominoEventBusSampleServerModule.class
-META-INF/services/org.dominokit.domino.api.server.entrypoint.ServerAppEntryPoint
-org/dominokit/sample/eventbus/server/SampleEventBusEntryPoint.class
-org/dominokit/sample/eventbus/server/package-info.class
-META-INF/services/org.dominokit.domino.api.server.config.ServerModuleConfiguration
