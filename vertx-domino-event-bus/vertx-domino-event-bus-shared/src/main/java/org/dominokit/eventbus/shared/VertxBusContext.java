@@ -5,6 +5,8 @@ import org.dominokit.domino.api.shared.extension.EventContext;
 
 public interface VertxBusContext extends EventContext {
 
+    public static final String EVENT_BUS_STORE = "event-bus";
+
     String DEFAULT_EVENTBUS_PATH = "/eventbus/*";
     String DEFAULT_SOCKJS_ADDRESS = "domino-frontend-address";
 

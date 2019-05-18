@@ -1,6 +1,7 @@
 package org.dominokit.sample.eventbus.client.presenters;
 
 import org.dominokit.domino.api.client.annotations.presenter.*;
+import org.dominokit.domino.api.client.mvp.StoreRegistry;
 import org.dominokit.domino.api.client.mvp.presenter.ViewBaseClientPresenter;
 import org.dominokit.eventbus.shared.VertxBusContext;
 import org.dominokit.eventbus.shared.VertxBusEvent;
@@ -18,10 +19,13 @@ public class DominoEventBusSampleProxy extends ViewBaseClientPresenter<DominoEve
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DominoEventBusSampleProxy.class);
 
-    @ListenTo(event = VertxBusEvent.class)
-    public void onEventBusReady(VertxBusContext context) {
-        context.registerMessageHandler(VertxBusContext.DEFAULT_SOCKJS_ADDRESS, (VertxBusContext.EventBusMessageHandler<Number>) message -> {
-            view.showNumber(message);
+    @OnReveal
+    public void startListening(){
+        StoreRegistry.INSTANCE.<VertxBusContext>consumeData(VertxBusContext.EVENT_BUS_STORE, vertxBusContext -> {
+            vertxBusContext.registerMessageHandler(VertxBusContext.DEFAULT_SOCKJS_ADDRESS, (VertxBusContext.EventBusMessageHandler<Number>) message -> {
+                view.showNumber(message);
+            });
         });
     }
+
 }

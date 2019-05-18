@@ -1,6 +1,8 @@
 package org.dominokit.eventbus.client.presenters;
 
 import org.dominokit.domino.api.client.annotations.presenter.*;
+import org.dominokit.domino.api.client.mvp.Store;
+import org.dominokit.domino.api.client.mvp.StoreRegistry;
 import org.dominokit.domino.api.client.mvp.presenter.ViewBaseClientPresenter;
 import org.dominokit.domino.api.shared.extension.MainDominoEvent;
 import org.dominokit.eventbus.client.vertx.VertxEventBus;
@@ -21,7 +23,7 @@ public class VertxBusProxy extends ViewBaseClientPresenter<VertxBusView> {
         vertxEventBus = new VertxEventBus(view.getHostUrl() + "eventbus", new Object());
         vertxEventBus.connectionOpened = () -> {
             vertxBusContext = new DefaultVertxBusContext(vertxEventBus);
-            fireEvent(VertxBusEvent.class, () -> vertxBusContext);
+            StoreRegistry.INSTANCE.registerStore(VertxBusContext.EVENT_BUS_STORE, new Store<>(vertxBusContext));
         };
     }
 }
