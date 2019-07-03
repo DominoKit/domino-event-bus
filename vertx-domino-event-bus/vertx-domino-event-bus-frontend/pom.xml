@@ -28,10 +28,6 @@
             <classifier>sources</classifier>
         </dependency>
         <dependency>
-            <groupId>org.dominokit.domino.logging</groupId>
-            <artifactId>domino-gwt-logger</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.dominokit.domino.apt</groupId>
             <artifactId>apt-client</artifactId>
             <scope>provided</scope>

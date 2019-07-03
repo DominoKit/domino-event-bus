@@ -16,11 +16,13 @@ public class SockJsEntryPoint implements VertxEntryPoint {
 
     @Override
     public void onVertxStartup(VertxContext vertxContext) {
-        ServerConfiguration serverConfiguration = vertxContext.config();
-        if (serverConfiguration.getString(SOCKJS_CONFIGURATOR_CONFIG_KEY, "").isEmpty())
-            configureDefault(vertxContext);
-        else
-            configureWithConfigurator(vertxContext, serverConfiguration);
+        if (vertxContext.config().getBoolean("enable.default.sockjs", true)) {
+            ServerConfiguration serverConfiguration = vertxContext.config();
+            if (serverConfiguration.getString(SOCKJS_CONFIGURATOR_CONFIG_KEY, "").isEmpty())
+                configureDefault(vertxContext);
+            else
+                configureWithConfigurator(vertxContext, serverConfiguration);
+        }
     }
 
     private void configureWithConfigurator(VertxContext vertxContext,
