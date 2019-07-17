@@ -12,8 +12,11 @@ public class VertxEventBus {
 
     @JsProperty(name = "onclose")
     public ConnectionClosed connectionClosed;
+    
+    public native void enableReconnect(boolean enable);
 
-    public VertxEventBus(String url, Object options){}
+    public VertxEventBus(String url, Object options) {
+    }
 
     public native <T> void registerHandler(String address, Handler<T> handler);
 }

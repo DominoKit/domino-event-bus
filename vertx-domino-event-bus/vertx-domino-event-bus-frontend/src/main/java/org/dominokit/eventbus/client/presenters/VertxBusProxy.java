@@ -8,7 +8,6 @@ import org.dominokit.domino.api.shared.extension.MainDominoEvent;
 import org.dominokit.eventbus.client.vertx.VertxEventBus;
 import org.dominokit.eventbus.client.views.VertxBusView;
 import org.dominokit.eventbus.shared.VertxBusContext;
-import org.dominokit.eventbus.shared.VertxBusEvent;
 
 @PresenterProxy
 @AutoRoute(routeOnce = true)
@@ -21,6 +20,7 @@ public class VertxBusProxy extends ViewBaseClientPresenter<VertxBusView> {
     @OnRouting
     public void onRouting() {
         vertxEventBus = new VertxEventBus(view.getHostUrl() + "eventbus", new Object());
+        vertxEventBus.enableReconnect(true);
         vertxEventBus.connectionOpened = () -> {
             vertxBusContext = new DefaultVertxBusContext(vertxEventBus);
             StoreRegistry.INSTANCE.registerStore(VertxBusContext.EVENT_BUS_STORE, new Store<>(vertxBusContext));
