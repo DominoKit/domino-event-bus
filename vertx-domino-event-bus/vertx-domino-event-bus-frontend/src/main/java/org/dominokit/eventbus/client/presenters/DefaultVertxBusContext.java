@@ -21,6 +21,12 @@ public class DefaultVertxBusContext implements VertxBusContext {
         vertxEventBus.<T>registerHandler(address, (error, message) -> handler.handle(message.body));
     }
 
+    @Override
+    public void unregisterMessageHandler(String address) {
+        vertxEventBus.unregisterHandler(address, (error, message) -> {
+        });
+    }
+
     public void registerEventBusCloseHandler(EventBusCloseHandler handler) {
         closeHandlers.add(handler);
     }

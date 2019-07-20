@@ -12,6 +12,8 @@ public interface VertxBusContext extends EventContext {
 
     <T> void registerMessageHandler(String address, EventBusMessageHandler<T> handler);
 
+    void unregisterMessageHandler(String address);
+
     void registerEventBusCloseHandler(EventBusCloseHandler handler);
 
     @FunctionalInterface
