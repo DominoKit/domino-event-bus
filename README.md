@@ -80,12 +80,12 @@
 vertxContext.vertx().setPeriodic(1000, event -> vertxContext.vertx().eventBus().publish(VertxBusContext.DEFAULT_SOCKJS_ADDRESS, new Random().nextInt()));
 
 // In your frontend, listen to the messages
-@ListenTo(event = VertxBusEvent.class)
-public void onEventBusReady(VertxBusContext context) {
-	context.registerMessageHandler(VertxBusContext.DEFAULT_SOCKJS_ADDRESS, (VertxBusContext.EventBusMessageHandler<Number>) message -> {
-	    // handle message
-	});
-}
+StoreRegistry.INSTANCE.<VertxBusContext>consumeData(VertxBusContext.EVENT_BUS_STORE, vertxBusContext -> {
+            vertxBusContext.registerMessageHandler(VertxBusContext.DEFAULT_SOCKJS_ADDRESS, (VertxBusContext.EventBusMessageHandler<Number>) message -> {
+                // handle message
+                
+            });
+        });
 ```
 
 
