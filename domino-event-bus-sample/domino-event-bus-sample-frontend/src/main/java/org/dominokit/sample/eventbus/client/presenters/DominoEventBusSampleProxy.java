@@ -3,17 +3,15 @@ package org.dominokit.sample.eventbus.client.presenters;
 import org.dominokit.domino.api.client.annotations.presenter.*;
 import org.dominokit.domino.api.client.mvp.StoreRegistry;
 import org.dominokit.domino.api.client.mvp.presenter.ViewBaseClientPresenter;
+import org.dominokit.domino.api.shared.extension.PredefinedSlots;
 import org.dominokit.eventbus.shared.VertxBusContext;
-import org.dominokit.eventbus.shared.VertxBusEvent;
 import org.dominokit.sample.eventbus.client.views.DominoEventBusSampleView;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static org.dominokit.domino.api.client.mvp.presenter.ViewBaseClientPresenter.DOCUMENT_BODY;
-
 @PresenterProxy
 @AutoRoute
-@Slot(DOCUMENT_BODY)
+@Slot(PredefinedSlots.BODY_SLOT)
 @AutoReveal
 public class DominoEventBusSampleProxy extends ViewBaseClientPresenter<DominoEventBusSampleView> {
 

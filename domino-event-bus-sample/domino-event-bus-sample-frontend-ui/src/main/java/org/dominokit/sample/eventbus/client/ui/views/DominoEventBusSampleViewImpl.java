@@ -14,17 +14,12 @@ public class DominoEventBusSampleViewImpl extends BaseElementView<HTMLDivElement
     private DominoElement<HTMLDivElement> root = DominoElement.div();
 
     @Override
-    public void init(HTMLDivElement root) {
-
-    }
-
-    @Override
-    public HTMLDivElement createRoot() {
-        return root.asElement();
-    }
-
-    @Override
     public void showNumber(Number message) {
         root.appendChild(TextNode.of(message + ""));
+    }
+
+    @Override
+    protected HTMLDivElement init() {
+        return root.element();
     }
 }
